@@ -5,7 +5,7 @@ import { TerriaPluginModule } from "terriajs-plugin-api";
  */
 const plugins: () => Promise<TerriaPluginModule>[] = () => [
   // Add plugin imports. Example:
-  import("terriajs-mvt-search")
+  //import("terriajs-mvt-search")
 ];
 
 export default plugins;
