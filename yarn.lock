@@ -11061,9 +11061,9 @@ terriajs-server@^4.0.0:
     request-promise "^4.0.1"
     yargs "^13.2.4"
 
-"terriajs@git://github.com/Mangoesmapping1/terriajs.git":
+"terriajs@git+https://github.com/Mangoesmapping1/terriajs.git":
   version "8.7.5"
-  resolved "git://github.com/Mangoesmapping1/terriajs.git#1cda8c62df9da8bf65ab6bd6b3e1a2a5a4ad0346"
+  resolved "git+https://github.com/Mangoesmapping1/terriajs.git#1cda8c62df9da8bf65ab6bd6b3e1a2a5a4ad0346"
   dependencies:
     "@babel/core" "^7.23.5"
     "@babel/parser" "^7.23.5"
