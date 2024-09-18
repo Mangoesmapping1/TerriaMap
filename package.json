@@ -79,7 +79,7 @@
     "semver": "^5.0.0",
     "style-loader": "^0.23.1",
     "svg-sprite-loader": "^6.0.11",
-    "terriajs": "git+https://github.com/Mangoesmapping1/terriajs.git#ac0d2f0",
+    "terriajs": "https://github.com/Mangoesmapping1/terriajs#d7aaa35",
     "terriajs-cesium": "8.0.0",
     "terriajs-plugin-api": "0.0.1-alpha.16",
     "terriajs-plugin-sample": "0.0.1-alpha.7",
