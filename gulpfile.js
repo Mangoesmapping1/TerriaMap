@@ -285,7 +285,7 @@ function checkForDuplicateCesium() {
   }
 }
 
-gulp.task("terriajs-server", terriajsServerGulpTask(3001));
+gulp.task("terriajs-server", terriajsServerGulpTask(3003));
 
 gulp.task("build", gulp.series("copy-terriajs-assets", "build-app"));
 gulp.task("release", gulp.series("copy-terriajs-assets", "release-app"));

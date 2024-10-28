@@ -13,12 +13,12 @@
       "url": ""
     },
     /*
-        // Text that will be added to any pages printed from your site.
-        printDisclaimer:{
-            text:"Put your print disclaimer here.",
-            url: "#"
-        },
-        */
+          // Text that will be added to any pages printed from your site.
+          printDisclaimer:{
+              text:"Put your print disclaimer here.",
+              url: "#"
+          },
+          */
     // Pop-up disclaimer that will be shown at the start
     // The text of the disclaimer is in lib/Views/GlobalDisclaimer.html
     // globalDisclaimer: {
@@ -32,20 +32,20 @@
     //     enableOnLocalhost: true // If false, don't show this when running on localhost
     // },
     /*
-        developerAttribution: {
-            text: "Your organisation",
-            link: "http://www.example.com"
-        },*/
+          developerAttribution: {
+              text: "Your organisation",
+              link: "http://www.example.com"
+          },*/
     // This is used in various text messages. You should also set <title> in index.html
-    "appName": "Terria Map",
+    "appName": "Cook Shire GIS",
     // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
     "brandBarElements": [
       "",
-      "<a target=\"_blank\" href=\"https://terria.io\"><img src=\"images/terria_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
+      "<a target=\"_blank\" href=\"https://terria.io\"><img src=\"https://www.cook.qld.gov.au/council-desc/images/footerlogo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
       ""
     ],
     // Shown when things go wrong.
-    "supportEmail": "help@example.com",
+    "supportEmail": "ict@mangoesmapping.com.au",
     // You probably shouldn't change this.
     "proj4ServiceBaseUrl": "proj4def/",
     // Or this
@@ -77,16 +77,56 @@
       },
       "fallbackLanguage": "en"
     },
-    "searchBarConfig": {},
+    "cesiumIonAccessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiMDQwZDI2ZC05ODZjLTQzODctYjBjNi1kOGIwMWY3ZWVhZDMiLCJpZCI6MjA3NDk0LCJpYXQiOjE3MTI2NDEzOTl9.7tKelzOXenhOxt-eB9pkm9cZK54pQ8R-qjS4ZT2u9nU",
+    "useCesiumIonTerrain": false,
     "searchProviders": [
       {
-        "id": "search-provider/cesium-ion",
-        "type": "cesium-ion-search-provider",
+        "id": "search-provider/indexed",
+        "type": "indexed-location-search-provider",
         "name": "translate#viewModels.searchLocations",
+        "url": "",
         "flightDurationSeconds": 1.5,
-        "minCharacters": 3
+        "minCharacters": 3,
+        "isOpen": true
       }
     ],
+    "dataThemes": {
+      "defaultDataThemeId": "dataTheme/water",
+      "previewDataThemeId": "dataTheme/water",
+      "items": [
+        {
+          "id": "dataTheme/water",
+          "label": "Water",
+          "url": "/#water",
+          "image": "/images/data_themes/colour/water.png"
+        },
+        {
+          "id": "dataTheme/sewer",
+          "label": "Sewer",
+          "url": "/#sewer",
+          "image": "/images/data_themes/colour/sewer.png"
+        },
+        {
+          "id": "dataTheme/property",
+          "label": "Property",
+          "url": "/#property",
+          "image": "/images/data_themes/colour/property.png"
+        }
+      ]
+    },
+    "searchBarConfig": {
+      // Just cooktown for now - need to include Lakeland and Laura in bounding box
+      "boundingBoxLimit": {
+        "north": -15.436,
+        "east": 145.31,
+        "south": -15.514,
+        "west": 145.181
+      },
+      "placeholder": "translate#search.placeholder",
+      "recommendedListLength": 5,
+      "flightDurationSeconds": 1.5,
+      "minCharacters": 3
+    },
     "helpContent": [
       {
         "title": "translate#gettingstarted.title",
