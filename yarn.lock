@@ -10962,9 +10962,9 @@ terriajs-tiff-imagery-provider@2.13.3:
   dependencies:
     geotiff "^2.0.7"
 
-"terriajs@https://github.com/Mangoesmapping1/terriajs#1b35a36":
+"terriajs@https://github.com/Mangoesmapping1/terriajs#65fe7b5":
   version "8.7.8"
-  resolved "https://github.com/Mangoesmapping1/terriajs#1b35a3621e27536496e4c135ca153ac75a98fe1d"
+  resolved "https://github.com/Mangoesmapping1/terriajs#65fe7b5d18d848863ed035c7e10dd13cac2c4548"
   dependencies:
     "@babel/core" "^7.23.5"
     "@babel/parser" "^7.23.5"
